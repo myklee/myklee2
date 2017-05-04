@@ -1,0 +1,26 @@
+{
+  "name": "myklee",
+  "version": "0.0.0",
+  "description": "my portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "myklee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myklee/myklee.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/myklee/myklee.com/issues"
+  },
+  "homepage": "https://github.com/myklee/myklee.com#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "jit-grunt": "^0.10.0"
+  }
+}
