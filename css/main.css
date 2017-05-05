@@ -127,13 +127,13 @@ section:after {
   background-image: url("../images/appMontage.png");
 }
 #design {
-  padding-left: 40;
+  padding-left: 65%;
 }
 #design:before {
   left: 0;
-  right: 40em;
+  right: 40%;
   background-image: url("../images/siteMontage.png");
-  background-position: left;
+  background-position: right;
 }
 #design:after {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
@@ -145,7 +145,8 @@ section:after {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=1);
   /* IE6-9 */
-  right: 40em;
+  left: auto;
+  right: 40%;
 }
 /* *********
 
