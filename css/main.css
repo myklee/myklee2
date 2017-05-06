@@ -37,9 +37,6 @@ body {
   font-weight: 300;
   font-size: 20px;
 }
-.feature-img {
-  width: 100%;
-}
 header {
   background-color: #E1EAD6;
   padding: 12em 6em 12em 12em;
@@ -56,10 +53,6 @@ header span {
 header a {
   color: #426952;
 }
-.links li {
-  padding: 1em 2em 1em 0;
-  float: left;
-}
 a {
   color: #333;
   text-decoration: underline;
@@ -68,14 +61,11 @@ a:active {
   color: black;
 }
 section {
+  box-sizing: border-box;
   overflow: hidden;
   position: relative;
   padding: 15em 6em;
   text-align: center;
-}
-section p,
-section li {
-  max-width: 25em;
 }
 section:before {
   background-color: #fff;
@@ -91,11 +81,39 @@ section:before {
   right: 0;
   z-index: -1;
 }
+.half {
+  float: left;
+  width: 50%;
+}
+.card {
+  background: rgba(255, 255, 255, 0.75);
+  box-sizing: border-box;
+  min-width: 35em;
+  max-width: 45em;
+  margin: 0 auto;
+  padding: 5em 4em;
+}
 #process:before {
   background-image: url("../images/wireframes.png");
 }
 #design:before {
   background-image: url("../images/mockups.png");
+}
+#more,
+#development {
+  height: 600px;
+}
+#development {
+  background-color: #333;
+  padding: 3em;
+  text-align: left;
+}
+#more .links li {
+  padding: 1em 2em 1em 0;
+  float: left;
+}
+footer {
+  text-align: center;
 }
 /* *********
 
