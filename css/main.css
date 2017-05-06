@@ -68,9 +68,11 @@ a:active {
   color: black;
 }
 section {
+  box-sizing: border-box;
+  display: block;
   overflow: hidden;
   position: relative;
-  padding: 12em 6em;
+  padding: 15em 6em;
 }
 section p,
 section li {
@@ -94,7 +96,7 @@ BG Img
 section:before {
   background-color: #fff;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top;
   content: "";
   display: block;
   height: 100%;
@@ -124,7 +126,7 @@ section:after {
 #process:before {
   left: 40em;
   right: 0;
-  background-image: url("../images/appMontage.png");
+  background-image: url("../images/wireframes.png");
 }
 #design {
   padding-left: 65%;
@@ -132,8 +134,8 @@ section:after {
 #design:before {
   left: 0;
   right: 40%;
-  background-image: url("../images/siteMontage.png");
-  background-position: right;
+  background-image: url("../images/mockups.png");
+  background-position: top center;
 }
 #design:after {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
@@ -156,6 +158,5 @@ MAX 1024px
 @media all and (max-width: 1024px) {
   body {
     font-size: 16px;
-    padding: 2.5em;
   }
 }
