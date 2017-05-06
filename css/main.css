@@ -39,6 +39,7 @@ body {
 }
 header {
   background-color: #E1EAD6;
+  box-shadow: 0 5px 10px rgba(13, 13, 13, 0.15);
   padding: 12em 6em 12em 12em;
 }
 header p {
@@ -64,11 +65,10 @@ section {
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
-  padding: 15em 6em;
+  padding: 13em 6em;
   text-align: center;
 }
 section:before {
-  background-color: #fff;
   background-repeat: no-repeat;
   background-position: top center;
   content: "";
@@ -86,6 +86,7 @@ section:before {
   width: 50%;
 }
 .card {
+  position: relative;
   background: rgba(255, 255, 255, 0.75);
   box-sizing: border-box;
   min-width: 35em;
@@ -94,9 +95,14 @@ section:before {
   padding: 5em 4em;
 }
 #process:before {
+  background-color: #E3E5DE;
   background-image: url("../images/wireframes.png");
 }
+#design {
+  box-shadow: 0 0 20px rgba(13, 13, 13, 0.15);
+}
 #design:before {
+  background-color: #fff;
   background-image: url("../images/mockups.png");
 }
 #more,
