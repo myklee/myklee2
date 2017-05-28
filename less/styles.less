@@ -3,25 +3,55 @@
 }
 
 header {
-    background-color: @headerBgColor;   
-    padding: 12em 6em 12em 12em;
+    box-sizing: border-box;
+    background-color: @headerBgColor;
+    width: 100%;
+    padding: 3.611em 2.667em 1.778em 2.667em;
     h1 {
         color: @hOffWhite;
-        color: @hOffWhite;
+        display: block;
+        font-size: 2.667em;
+        font-weight: 700;
+        line-height: 1em;
+        text-transform: uppercase;
     }
     p {
-        color:@offWhite;
+        color: white;
         margin: 1em 0;
-        width: 35em;
+        font-size: @baseFont;
+        font-weight: 100;
+        line-height: 1.8em;
+        margin-top: 3em;
+        width: 15.278em;
+        span {
+            display: block;
+            font-size: 1.33em;
+            font-weight: 400;
+        }
     }
     span {
         color: @hOffWhite;
-        font-size: 1.15em;
-        font-weight: 700;
+        display: block;
+        font-weight: 600;
+        letter-spacing: .033em;
+        margin-top: -1.33em;
+        position: absolute;
     }
-    a {
-        color: @offWhite;
-    }
+}
+
+.email {
+    background-color: @offWhite;
+    box-sizing: border-box;
+    color: @blue;
+    display: block;
+    font-size: 0.889em;
+    font-weight: 600;
+    letter-spacing: .1em;
+    margin-top: 1.667em;
+    margin-left: -3em;
+    padding: 1.111em 2.89em;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .links {
@@ -41,20 +71,42 @@ a {
 
 section {
     box-sizing: border-box;
-    display: block; // height:800px;
-    overflow: hidden;
-    position: relative;
-    padding: 15em 6em;
+}
+
+#product {
+    h1,
+    h2,
+    h3,
     p,
     li {
-        max-width: 25em;
+        color: @blue;
+    }
+    h2 {
+        background-color: @blue;
+        color: @offWhite;
+        display: block;
+        font-size: 1.333em;
+        font-weight: 600;
+        letter-spacing: .1em;
+        line-height: 1em;
+        padding: 0 0 2em 2em;
+        width: 100%;
+        text-transform: uppercase; // margin: -2.667em 0 2.667em 2.667em;
+        span {
+            display: block;
+            font-size: .583em;
+            font-weight: 100;
+            letter-spacing: .25em;
+        }
     }
 }
 
-
-/* *******
-
-BG Img
-
-*********** */
-
+#design {
+    h1,
+    h2,
+    h3,
+    p,
+    li {
+        color: @blue;
+    }
+}

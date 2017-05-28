@@ -1,20 +1,4 @@
 @import "../css/reset.css";
-/*
-Modular Scale
-11.391em
-7.594em
-5.063em 
-3.375em
-2.25em
-1.5em
-1em
-0.667em
-0.444em
-0.296em
-0.198em
-0.132em
-0.088em
-*/
 /* colors */
 h1,
 h2,
@@ -25,39 +9,64 @@ h6 {
   font-family: 'Raleway', sans-serif;
   line-height: 1.5em;
 }
-h1 {
-  font-size: 3.375em;
-}
-h2 {
-  font-size: 1.5em;
-}
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 18px;
+  letter-spacing: .033em;
 }
 .feature-img {
   width: 100%;
 }
 header {
+  box-sizing: border-box;
   background-color: #347AAA;
-  padding: 12em 6em 12em 12em;
+  width: 100%;
+  padding: 3.611em 2.667em 1.778em 2.667em;
 }
 header h1 {
   color: #F2F0E4;
+  display: block;
+  font-size: 2.667em;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
 }
 header p {
-  color: #F2F0E4;
+  color: white;
   margin: 1em 0;
-  width: 35em;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 1.8em;
+  margin-top: 3em;
+  width: 15.278em;
+}
+header p span {
+  display: block;
+  font-size: 1.33em;
+  font-weight: 400;
 }
 header span {
   color: #F2F0E4;
-  font-size: 1.15em;
-  font-weight: 700;
+  display: block;
+  font-weight: 600;
+  letter-spacing: .033em;
+  margin-top: -1.33em;
+  position: absolute;
 }
-header a {
-  color: #F2F0E4;
+.email {
+  background-color: #F2F0E4;
+  box-sizing: border-box;
+  color: #347AAA;
+  display: block;
+  font-size: 0.889em;
+  font-weight: 600;
+  letter-spacing: .1em;
+  margin-top: 1.667em;
+  margin-left: -3em;
+  padding: 1.111em 2.89em;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 .links li {
   padding: 1em 2em 1em 0;
@@ -72,20 +81,39 @@ a:active {
 }
 section {
   box-sizing: border-box;
+}
+#product h1,
+#product h2,
+#product h3,
+#product p,
+#product li {
+  color: #347AAA;
+}
+#product h2 {
+  background-color: #347AAA;
+  color: #F2F0E4;
   display: block;
-  overflow: hidden;
-  position: relative;
-  padding: 15em 6em;
+  font-size: 1.333em;
+  font-weight: 600;
+  letter-spacing: .1em;
+  line-height: 1em;
+  padding: 0 0 2em 2em;
+  width: 100%;
+  text-transform: uppercase;
 }
-section p,
-section li {
-  max-width: 25em;
+#product h2 span {
+  display: block;
+  font-size: .583em;
+  font-weight: 100;
+  letter-spacing: .25em;
 }
-/* *******
-
-BG Img
-
-*********** */
+#design h1,
+#design h2,
+#design h3,
+#design p,
+#design li {
+  color: #347AAA;
+}
 /* *********
 
 MAX 1024px
@@ -93,6 +121,6 @@ MAX 1024px
 ********** */
 @media all and (max-width: 1024px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
