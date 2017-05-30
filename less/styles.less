@@ -1,10 +1,15 @@
+/* ***********
+base (18) px to em
+
+10px = .556em
+************ */
+
 .feature-img {
     width: 100%;
 }
 
 header {
-    box-sizing: border-box;
-    background-color: @headerBgColor;
+    background: @headerBgColor;
     width: 100%;
     padding: 3.611em 2.667em 1.778em 2.667em;
     h1 {
@@ -18,11 +23,11 @@ header {
     p {
         color: white;
         margin: 1em 0;
-        font-size: @baseFont;
+        font-size: .889em;
         font-weight: 100;
-        line-height: 1.8em;
+        line-height: 1.75em;
         margin-top: 3em;
-        width: 15.278em;
+        width: 17.188em;
         span {
             display: block;
             font-size: 1.33em;
@@ -40,7 +45,7 @@ header {
 }
 
 .email {
-    background-color: @offWhite;
+    background: @offWhite;
     box-sizing: border-box;
     color: @blue;
     display: block;
@@ -50,8 +55,8 @@ header {
     margin-top: 1.667em;
     margin-left: -3em;
     padding: 1.111em 2.89em;
-    text-transform: uppercase;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .links {
@@ -70,43 +75,102 @@ a {
 }
 
 section {
-    box-sizing: border-box;
-}
-
-#product {
-    h1,
-    h2,
-    h3,
-    p,
-    li {
-        color: @blue;
+    p {
+        font-size: 1.111em;
+        line-height: 2em;
+        margin: 2.5em 2.5em .556em 2.5em;
+        width: 14.5em;
     }
     h2 {
-        background-color: @blue;
+        display: block;
+        text-transform: uppercase; // margin: -2.667em 0 2.667em 2.667em;
+    }
+    li {
+        font-size: 14px;
+        font-size: 0.778em;
+        margin: 0 0 0 3.571em;
+    }
+}
+
+figure {
+    margin: 1.667em 0;
+    width: 100%;
+}
+
+figcaption {
+    h3 {
+        font-size: 1em;
+        font-weight: 600;
+        padding: 0 0 0 2.667em;
+    }
+    p {
+        font-size: .556em;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0 0 0 5em;
+        width: 100%;
+        
+    }
+}
+
+.scroller {
+    overflow: scroll;
+    padding: 1em .556em;
+    width: 100%;
+}
+
+#product,
+#design,
+#more-info {}
+
+#product {
+    color: @blue;
+}
+
+#product-head {
+    background: @blue;
+    color: white;
+    font-size: 1.333em;
+    font-weight: 600;
+    letter-spacing: .1em;
+    line-height: 1em;
+    padding: 0 0 2em 2em;
+    width: 100%;
+    span {
         color: @offWhite;
         display: block;
-        font-size: 1.333em;
-        font-weight: 600;
-        letter-spacing: .1em;
-        line-height: 1em;
-        padding: 0 0 2em 2em;
-        width: 100%;
-        text-transform: uppercase; // margin: -2.667em 0 2.667em 2.667em;
-        span {
-            display: block;
-            font-size: .583em;
-            font-weight: 100;
-            letter-spacing: .25em;
-        }
+        font-size: .583em;
+        font-weight: 100;
+        letter-spacing: .25em;
     }
 }
 
 #design {
-    h1,
-    h2,
-    h3,
-    p,
-    li {
-        color: @blue;
+    background: @offWhite;
+    color: @blue;
+}
+
+#uiux-head {
+    position: relative;
+    left: 2.667em;
+    margin-top: 1em;
+    width: 3.542em;
+    span {
+        font-size: 1.25em;
+        font-weight: 900;
+    }
+}
+#sites {
+    overflow:hidden;
+    .scroller {
+        padding-left: 5px;
+        width: 150%;
+    }
+}
+
+#iconography {
+    .scroller {
+        padding-left:0;
+        padding-right: 0;
     }
 }

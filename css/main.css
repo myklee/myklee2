@@ -9,18 +9,21 @@ h6 {
   font-family: 'Raleway', sans-serif;
   line-height: 1.5em;
 }
-body {
+html {
   font-family: 'Raleway', sans-serif;
-  font-weight: 100;
   font-size: 18px;
   letter-spacing: .033em;
 }
+/* ***********
+base (18) px to em
+
+10px = .556em
+************ */
 .feature-img {
   width: 100%;
 }
 header {
-  box-sizing: border-box;
-  background-color: #347AAA;
+  background: #347AAA;
   width: 100%;
   padding: 3.611em 2.667em 1.778em 2.667em;
 }
@@ -35,11 +38,11 @@ header h1 {
 header p {
   color: white;
   margin: 1em 0;
-  font-size: 18px;
+  font-size: .889em;
   font-weight: 100;
-  line-height: 1.8em;
+  line-height: 1.75em;
   margin-top: 3em;
-  width: 15.278em;
+  width: 17.188em;
 }
 header p span {
   display: block;
@@ -55,7 +58,7 @@ header span {
   position: absolute;
 }
 .email {
-  background-color: #F2F0E4;
+  background: #F2F0E4;
   box-sizing: border-box;
   color: #347AAA;
   display: block;
@@ -65,8 +68,8 @@ header span {
   margin-top: 1.667em;
   margin-left: -3em;
   padding: 1.111em 2.89em;
-  text-transform: uppercase;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .links li {
   padding: 1em 2em 1em 0;
@@ -79,48 +82,89 @@ a {
 a:active {
   color: black;
 }
-section {
-  box-sizing: border-box;
+section p {
+  font-size: 1.111em;
+  line-height: 2em;
+  margin: 2.5em 2.5em .556em 2.5em;
+  width: 14.5em;
 }
-#product h1,
-#product h2,
-#product h3,
-#product p,
-#product li {
+section h2 {
+  display: block;
+  text-transform: uppercase;
+}
+section li {
+  font-size: 14px;
+  font-size: 0.778em;
+  margin: 0 0 0 3.571em;
+}
+figure {
+  margin: 1.667em 0;
+  width: 100%;
+}
+figcaption h3 {
+  font-size: 1em;
+  font-weight: 600;
+  padding: 0 0 0 2.667em;
+}
+figcaption p {
+  font-size: .556em;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0 0 0 5em;
+  width: 100%;
+}
+.scroller {
+  overflow: scroll;
+  padding: 1em .556em;
+  width: 100%;
+}
+#product {
   color: #347AAA;
 }
-#product h2 {
-  background-color: #347AAA;
-  color: #F2F0E4;
-  display: block;
+#product-head {
+  background: #347AAA;
+  color: white;
   font-size: 1.333em;
   font-weight: 600;
   letter-spacing: .1em;
   line-height: 1em;
   padding: 0 0 2em 2em;
   width: 100%;
-  text-transform: uppercase;
 }
-#product h2 span {
+#product-head span {
+  color: #F2F0E4;
   display: block;
   font-size: .583em;
   font-weight: 100;
   letter-spacing: .25em;
 }
-#design h1,
-#design h2,
-#design h3,
-#design p,
-#design li {
+#design {
+  background: #F2F0E4;
   color: #347AAA;
+}
+#uiux-head {
+  position: relative;
+  left: 2.667em;
+  margin-top: 1em;
+  width: 3.542em;
+}
+#uiux-head span {
+  font-size: 1.25em;
+  font-weight: 900;
+}
+#sites {
+  overflow: hidden;
+}
+#sites .scroller {
+  padding-left: 5px;
+  width: 150%;
+}
+#iconography .scroller {
+  padding-left: 0;
+  padding-right: 0;
 }
 /* *********
 
 MAX 1024px
 
 ********** */
-@media all and (max-width: 1024px) {
-  body {
-    font-size: 18px;
-  }
-}
