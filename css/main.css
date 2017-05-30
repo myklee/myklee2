@@ -22,6 +22,9 @@ base (18) px to em
 .feature-img {
   width: 100%;
 }
+p {
+  max-width: 75em;
+}
 header {
   background: #347AAA;
   width: 100%;
@@ -33,6 +36,7 @@ header h1 {
   font-size: 2.667em;
   font-weight: 700;
   line-height: 1em;
+  white-space: nowrap;
   text-transform: uppercase;
 }
 header p {
@@ -42,7 +46,9 @@ header p {
   font-weight: 100;
   line-height: 1.75em;
   margin-top: 3em;
-  width: 17.188em;
+  min-width: 17.188em;
+  max-width: 45em;
+  padding: 0 2.667em 0 0;
 }
 header p span {
   display: block;
@@ -66,7 +72,9 @@ header span {
   font-weight: 600;
   letter-spacing: .1em;
   margin-top: 1.667em;
-  margin-left: -3em;
+  margin: 0 3.125em 0 -3.125em;
+  min-width: 20.438em;
+  max-width: 45em;
   padding: 1.111em 2.89em;
   text-decoration: none;
   text-transform: uppercase;
@@ -86,7 +94,8 @@ section p {
   font-size: 1.111em;
   line-height: 2em;
   margin: 2.5em 2.5em .556em 2.5em;
-  width: 14.5em;
+  min-width: 14.5em;
+  width: 80%;
 }
 section h2 {
   display: block;
@@ -142,6 +151,25 @@ figcaption p {
   background: #F2F0E4;
   color: #347AAA;
 }
+#graphics-head {
+  background: white;
+  font-size: 1.778em;
+  font-weight: 900;
+  line-height: 1em;
+  padding: 0 0 .938em 1.563em;
+}
+#graphics-head span {
+  font-size: .438em;
+  font-weight: 600;
+  line-height: 1em;
+  display: block;
+}
+#graphics-head span em {
+  color: #F2F0E4;
+  font-size: 1.5em;
+  position: relative;
+  top: .1em;
+}
 #uiux-head {
   position: relative;
   left: 2.667em;
@@ -157,14 +185,103 @@ figcaption p {
 }
 #sites .scroller {
   padding-left: 5px;
-  width: 150%;
+  width: 105%;
 }
 #iconography .scroller {
   padding-left: 0;
   padding-right: 0;
+}
+/* Icon Sprite */
+.icon {
+  background-image: url(../images/icons.png);
+  background-repeat: no-repeat;
+  float: left;
+  height: 90px;
+  width: 90px;
+  margin: 0 10px 10px 0;
+}
+.settings {
+  background-position: 0 0;
+}
+.resources {
+  background-position: 0 -100px;
+}
+.text {
+  background-position: 0 -200px;
+}
+.feed {
+  background-position: 0 -300px;
+}
+.directory {
+  background-position: 0 -400px;
+}
+.superuser {
+  background-position: 0 -500px;
+}
+.fax {
+  background-position: 0 -600px;
+}
+.camera {
+  background-position: 0 -700px;
+}
+.navigation {
+  background-position: 0 -800px;
+}
+.auditor {
+  background-position: 0 -900px;
+}
+.copy {
+  background-position: 0 -1000px;
+}
+.appearance {
+  background-position: 0 -1100px;
+}
+/* Site Sprite */
+.site-img {
+  background-image: url(../images/sites.png);
+  background-repeat: no-repeat;
+  float: left;
+  height: 165px;
+  width: 365px;
+  margin: 0 15px 15px 0;
+}
+.mahopec {
+  background-position: 0 0;
+}
+.newdawn {
+  background-position: 0 -170px;
+}
+.pelham {
+  background-position: 0 -340px;
+}
+.nanuet {
+  background-position: 0 -510px;
+}
+.drew {
+  background-position: 0 -680px;
+}
+.vannest {
+  background-position: 0 -850px;
+}
+.york {
+  background-position: 0 -1020px;
+}
+.cow {
+  background-position: 0 -1190px;
+}
+.centralhigh {
+  background-position: 0 -1360px;
+}
+.aviationhigh {
+  background-position: 0 -1530px;
 }
 /* *********
 
 MAX 1024px
 
 ********** */
+@media all and (min-width: 1024px) {
+  html {
+    font-size: 32px;
+  }
+}
