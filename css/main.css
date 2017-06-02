@@ -98,13 +98,27 @@ section p {
   width: 80%;
 }
 section h2 {
+  position: relative;
   display: block;
   text-transform: uppercase;
 }
-section li {
-  font-size: 14px;
-  font-size: 0.778em;
-  margin: 0 0 0 3.571em;
+section h2:after {
+  content: '';
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+  bottom: -0.75em;
+  transform: rotate(-45deg);
+}
+section h2.blue-arrow:after {
+  background: #347AAA;
+}
+section h2.offwhite-arrow:after {
+  background: #F2F0E4;
+}
+section h2.white-arrow:after {
+  background: white;
 }
 figure {
   margin: 1.667em 0;
@@ -130,6 +144,11 @@ figcaption p {
 #product {
   color: #347AAA;
 }
+#product li {
+  font-size: 14px;
+  font-size: 0.778em;
+  margin: 0 0 0 3.571em;
+}
 #product-head {
   background: #347AAA;
   color: white;
@@ -137,8 +156,11 @@ figcaption p {
   font-weight: 600;
   letter-spacing: .1em;
   line-height: 1em;
-  padding: 0 0 2em 2em;
+  padding: 0 0 2.083em 2.083em;
   width: 100%;
+}
+#product-head:after {
+  left: 2.383em;
 }
 #product-head span {
   color: #F2F0E4;
@@ -158,6 +180,9 @@ figcaption p {
   line-height: 1em;
   padding: 0 0 .938em 1.563em;
 }
+#graphics-head:after {
+  left: 1.813em;
+}
 #graphics-head span {
   font-size: .438em;
   font-weight: 600;
@@ -170,26 +195,55 @@ figcaption p {
   position: relative;
   top: .1em;
 }
-#uiux-head {
-  position: relative;
-  left: 2.667em;
-  margin-top: 1em;
-  width: 3.542em;
-}
-#uiux-head span {
-  font-size: 1.25em;
-  font-weight: 900;
+#iconography .scroller {
+  padding-left: 0;
+  padding-right: 0;
 }
 #sites {
+  margin-bottom: 0;
   overflow: hidden;
 }
 #sites .scroller {
   padding-left: 5px;
   width: 105%;
 }
-#iconography .scroller {
-  padding-left: 0;
-  padding-right: 0;
+#more {
+  position: relative;
+  background: #354F2E;
+  color: #F2F0E4;
+  font-size: 1em;
+  padding-bottom: 10em;
+}
+#more h3 {
+  margin-top: 4em;
+}
+#more-head {
+  background-color: #F2F0E4;
+  color: #354F2E;
+  font-weight: 600;
+  margin: 0;
+  padding: 0 0 1.667em 4.125em;
+}
+.more-lists {
+  display: flex;
+  padding: 0 0 0 5.156em;
+  width: 40em;
+}
+.more-lists li {
+  font-size: .5em;
+  text-transform: uppercase;
+}
+.skills-list,
+.tools-list {
+  padding-right: 2em;
+}
+.links {
+  position: absolute;
+  right: 3em;
+  top: 10em;
+}
+.links li {
+  padding-right: 4em;
 }
 /* Icon Sprite */
 .icon {
@@ -283,5 +337,13 @@ MAX 1024px
 @media all and (min-width: 1024px) {
   html {
     font-size: 32px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .links {
+    left: 5em;
+    right: auto;
+    top: 18em;
+    bottom: 5em;
   }
 }

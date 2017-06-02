@@ -7,9 +7,11 @@ base (18) px to em
 .feature-img {
     width: 100%;
 }
+
 p {
     max-width: 75em;
 }
+
 header {
     background: @headerBgColor;
     width: 100%;
@@ -32,8 +34,7 @@ header {
         margin-top: 3em;
         min-width: 17.188em;
         max-width: 45em;
-        padding: 0 2.667em 0 0;
-        // width:80%;
+        padding: 0 2.667em 0 0; // width:80%;
         span {
             display: block;
             font-size: 1.33em;
@@ -91,17 +92,27 @@ section {
         width: 80%;
     }
     h2 {
+        position: relative;
         display: block;
         text-transform: uppercase; // margin: -2.667em 0 2.667em 2.667em;
         &:after {
-            background-image: url(..)
-            content:'';
+            content: '';
+            display: block;
+            width: 1.5em;
+            height: 1.5em;
+            position: absolute;
+            bottom: -0.75em;
+            transform: rotate(-45deg);
         }
-    }
-    li {
-        font-size: 14px;
-        font-size: 0.778em;
-        margin: 0 0 0 3.571em;
+        &.blue-arrow:after {
+            background: @blue;
+        }
+        &.offwhite-arrow:after {
+            background: @offWhite;
+        }
+        &.white-arrow:after {
+            background: white;
+        }
     }
 }
 
@@ -137,6 +148,11 @@ figcaption {
 
 #product {
     color: @blue;
+    li {
+        font-size: 14px;
+        font-size: 0.778em;
+        margin: 0 0 0 3.571em;
+    }
 }
 
 #product-head {
@@ -146,8 +162,11 @@ figcaption {
     font-weight: 600;
     letter-spacing: .1em;
     line-height: 1em;
-    padding: 0 0 2em 2em;
+    padding: 0 0 2.083em 2.083em;
     width: 100%;
+    &:after {
+        left: 2.083em + .3em;
+    }
     span {
         color: @offWhite;
         display: block;
@@ -168,6 +187,9 @@ figcaption {
     font-weight: 900;
     line-height: 1em;
     padding: 0 0 .938em 1.563em;
+    &:after {
+        left: 1.563em + .25em;
+    }
     span {
         font-size: .438em;
         font-weight: 600;
@@ -182,25 +204,6 @@ figcaption {
     }
 }
 
-#uiux-head {
-    position: relative;
-    left: 2.667em;
-    margin-top: 1em;
-    width: 3.542em;
-    span {
-        font-size: 1.25em;
-        font-weight: 900;
-    }
-}
-
-#sites {
-    overflow: hidden;
-    .scroller {
-        padding-left: 5px;
-        width: 105%;
-    }
-}
-
 #iconography {
     .scroller {
         padding-left: 0;
@@ -208,7 +211,58 @@ figcaption {
     }
 }
 
+#sites {
+    margin-bottom: 0;
+    overflow: hidden;
+    .scroller {
+        padding-left: 5px;
+        width: 105%;
+    }
+}
 
+#more {
+    position: relative;
+    background: @green;
+    color: @offWhite;
+    font-size: 1em; //reset font size
+    padding-bottom: 10em;
+    h3 {
+        margin-top: 4em; // padding: 0 0 0 5.156em;
+    }
+}
+
+#more-head {
+    background-color: @offWhite;
+    color: @green; // font-size: 1.778em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0 0 1.667em 4.125em;
+}
+
+.more-lists {
+    display: flex;
+    padding: 0 0 0 5.156em;
+    width:40em;
+    li {
+        font-size: .5em;
+        text-transform: uppercase;
+    }
+}
+
+.skills-list,
+.tools-list {
+    padding-right: 2em;
+}
+
+.links {
+    position: absolute;
+    right: 3em;
+    top:10em;
+    
+    li {
+        padding-right:4em;
+    }
+}
 /* Icon Sprite */
 
 @iconMargin: 10px;
