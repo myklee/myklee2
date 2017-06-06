@@ -195,16 +195,13 @@ figcaption p {
   position: relative;
   top: .1em;
 }
-#iconography .scroller {
+#iconography .scroller,
+#sites .scroller {
   padding-left: 2.667em;
 }
 #sites {
   margin-bottom: 0;
   overflow: hidden;
-}
-#sites .scroller {
-  padding-left: 5px;
-  width: 105%;
 }
 #more {
   position: relative;
