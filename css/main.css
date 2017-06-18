@@ -195,8 +195,7 @@ figcaption p {
   position: relative;
   top: .1em;
 }
-#iconography .scroller,
-#sites .scroller {
+#iconography .scroller {
   padding-left: 2.667em;
 }
 #sites {
@@ -223,7 +222,7 @@ figcaption p {
 .more-lists {
   display: flex;
   padding: 0 0 0 5.156em;
-  width: 40em;
+  width: 100%;
 }
 .more-lists li {
   font-size: .5em;
@@ -337,7 +336,7 @@ MAX 1024px
 }
 @media all and (max-width: 1440px) {
   .links {
-    left: 5em;
+    left: 3em;
     right: auto;
     top: 18em;
     bottom: 5em;
@@ -357,7 +356,15 @@ MAX 1024px
   }
   #sites .scroller,
   #iconography .scroller {
-    padding: 1.5em 0 1.5em 2.667em;
     text-align: center;
+  }
+  footer {
+    width: 100%;
+  }
+  .more-lists {
+    padding: 0 0 0 3em;
+  }
+  .links li {
+    padding-right: 3em;
   }
 }

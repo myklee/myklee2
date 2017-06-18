@@ -12,7 +12,7 @@ MAX 1024px
 
 @media all and (max-width: 1440px) {
     .links {
-        left: 5em;
+        left: 3em;
         right: auto;
         top: 18em;
         bottom: 5em;
@@ -22,8 +22,10 @@ MAX 1024px
         height: 24px;
     }
 }
+
 @media all and (max-width: 1280px) {
-    #wireframes, #app {
+    #wireframes,
+    #app {
         img {
             width: 1275px;
         }
@@ -33,10 +35,21 @@ MAX 1024px
             width: 1267px;
         }
     }
-    #sites, #iconography {
+    #sites,
+    #iconography {
         .scroller {
-            padding:1.5em 0 1.5em 2.667em;
+            // padding: 1.5em;
             text-align: center;
         }
+    }
+    footer {
+        width: 100%;
+    }
+    .more-lists {        
+        padding: 0 0 0 3em;
+
+    }
+    .links li {
+        padding-right: 3em;
     }
 }
