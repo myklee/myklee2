@@ -358,6 +358,9 @@ MAX 1024px
   #iconography .scroller {
     text-align: center;
   }
+  #sites .scroller {
+    width: 125%;
+  }
   footer {
     width: 100%;
   }
